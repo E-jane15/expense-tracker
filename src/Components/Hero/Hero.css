@@ -1,0 +1,41 @@
+.hero{
+    margin-left: 280px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #ffff;
+ 
+}
+
+.expense{
+    background: #18c78b ;
+    padding:15px 25px;
+    border-radius: 15px;
+    width: 300px;
+    
+}
+.expense h3{
+    font-size: 15px;
+}
+.expense-budget{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.expense-budget button{
+    background-color: #fff;
+    padding: 5px 10px ;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.color-change{
+    color:#c92b2b;
+    background: #18c78b ;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 300px;
+    
+}

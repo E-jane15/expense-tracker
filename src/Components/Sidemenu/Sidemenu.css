@@ -1,0 +1,16 @@
+.side-menu{
+width: 38vh;
+height: 100vh;
+background-color: #18c78b;
+font-size: 20px;
+padding-top: 100px;
+padding: 60px 40px;
+position: fixed;
+color: #fff;
+}
+
+
+ul li{
+    list-style: none;
+    margin-top: 16px;
+}
