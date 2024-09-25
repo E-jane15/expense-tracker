@@ -7,7 +7,6 @@ const Header = () => {
   return (
     <div className='container'>
         <h1>Welcome back, Jane!</h1>
-        
         <div className='profile'>
          <BiBell className='bell'/>
          <img src={myProfile} alt="" />

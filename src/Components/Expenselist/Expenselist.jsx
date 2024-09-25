@@ -59,6 +59,7 @@ const Expenselist = ({ setTotalExpenses }) => {
   const handleDelete=(id)=>{
     setExpenses(expenses.filter(
       (expense)=>expense.id !== id));
+      console.log(1);
   };
 
   const addExpense = (expense) => {

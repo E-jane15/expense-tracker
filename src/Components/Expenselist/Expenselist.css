@@ -58,3 +58,39 @@
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 560px){
+    .expense-container{
+        width: 100%;
+        margin-left: 20px;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .expense-container input{
+        width: 80%;
+        padding: 5px 10px;
+        outline: none;
+        border-radius: 10px;
+        background: #e8f9f3;
+        border: 1px solid #d5e6e0;
+        margin-top: 5px;
+        margin-right: 10px;
+         
+    }
+    .btn{
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .total{
+        width: 100%;
+
+    }
+    .search-container{
+        width: 95%;
+    }
+    .list{
+        font-size: 12px ;
+    }
+    
+}

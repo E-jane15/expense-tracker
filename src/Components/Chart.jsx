@@ -1,18 +1,39 @@
-import React from 'react'
+import React from 'react';
+import Chart from 'react-apexcharts';
 
-const Chart = () => {
+const Chart = ({ expenses }) => {
+  // Prepare the data for the chart
+  const categories = expenses.map(expense => expense.category);
+  const amounts = expenses.map(expense => expense.itemAmount);
+
+  const options = {
+    chart: {
+      type: 'pie',
+    },
+    labels: categories,
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 320
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    ]
+  };
+
+  const series = amounts;
+
   return (
     <div>
-        <div className="category">
-        <h3>Expense by category</h3>
-        <ul>
-          <li>Product</li>
-          <li>Groceries</li>
-          <li>Houskeeping</li>
-        </ul>
-      </div>
+      <h2>Expenses by Category</h2>
+      <Chart options={options} series={series} type="pie" width="500" />
     </div>
-  )
-}
+  );
+};
 
-export default Chart
+export default Chart;

@@ -14,3 +14,25 @@ ul li{
     list-style: none;
     margin-top: 16px;
 }
+.menu-icon{
+    display: none;
+}
+
+@media (max-width: 840px){
+ .side-menu{
+    width: 30vh;
+    left: -200px;
+ }
+ .side-menu ul li{
+    transition: 0.5s;
+ }
+ .menu-icon{
+  display: block;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hide-mobile-menu{
+    right: -200px;
+  }
+}
