@@ -33,10 +33,6 @@ const Budget = ({ onAdd, onCancel }) => {
             onChange={(e) => setName(e.target.value)}
           />
           <label htmlFor="">Category</label>
-          <select name="category" id="">
-            <option value="All">All</option>
-            <option value="Food">Food</option>
-          </select>
 
           <input
             type="string"
